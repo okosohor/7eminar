@@ -36,11 +36,8 @@ const photos = [photo1, photo2, photo3];
         v-for="(photo, idx) in photos"
         :key="idx"
       >
-        <!-- {{ photo }} -->
         <img class="slider-photo" :src="photo" />
       </SwiperSlide>
-
-      <!-- useSwiper() within a swiper instance -->
       <SwiperControls
       />
     </Swiper>
@@ -78,7 +75,7 @@ scoped>
   transition: all 0.6s;
 
   &-active {
-    transform: translatey(-61px);
+    transform: translatey(-61px) !important;
 
   }
 }
