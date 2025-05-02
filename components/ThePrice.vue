@@ -330,7 +330,7 @@ onMounted(() => {
       <div class="desktop-price__header-block">
         <div class="desktop-price__timer-wrapper">
           <div class="desktop-price__timer">
-            <p class="desktop-price__timer-number">{{ time }} : {{ time }} : <span class="desktop-price__timer-number--blue">{{ time }}</span></p>
+            <p class="desktop-price__timer-number">{{ time }} : {{ time }} : {{ time }}</p>
             <div class="desktop-price__timer-text-container">
               <p class="desktop-price__timer-text">год</p>
               <p class="desktop-price__timer-text">хв</p>
@@ -724,7 +724,7 @@ onMounted(() => {
       font-style: normal;
       font-weight: 400;
       line-height: 150%;
-      width: max-content;
+      width: 100%;
 
       &--blue {
         color: $blueSecondaryColor;

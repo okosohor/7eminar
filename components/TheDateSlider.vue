@@ -17,7 +17,7 @@
           const totalDays = (maxDate - minDate) / (24 * 60 * 60 * 1000);
           const passedDays = (date - minDate) / (24 * 60 * 60 * 1000);
           const percent = (passedDays / totalDays) * 100;
-          return 100 + '%';
+          return percent + '%';
     }
       
 </script>
