@@ -11,13 +11,13 @@
       const passedDays = (currentDate - minDate) / (24 * 60 * 60 * 1000);
       const percent = (passedDays / totalDays) * 100;
 
-      const progress = percent + '%'
+      const progress = 100 + '%'
 
       const marker = (date) => {
           const totalDays = (maxDate - minDate) / (24 * 60 * 60 * 1000);
           const passedDays = (date - minDate) / (24 * 60 * 60 * 1000);
           const percent = (passedDays / totalDays) * 100;
-          return percent + '%';
+          return 100 + '%';
     }
       
 </script>
