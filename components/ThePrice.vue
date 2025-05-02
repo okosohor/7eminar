@@ -27,6 +27,8 @@ const formattedHours = computed(() => formatNumber(hours.value));
 const formattedMinutes = computed(() => formatNumber(minutes.value));
 const formattedSeconds = computed(() => formatNumber(seconds.value));
 
+const time = "00"
+
 onMounted(() => {
   updateTimer();
   setInterval(updateTimer, 1000);
@@ -328,7 +330,7 @@ onMounted(() => {
       <div class="desktop-price__header-block">
         <div class="desktop-price__timer-wrapper">
           <div class="desktop-price__timer">
-            <p class="desktop-price__timer-number">{{ formattedHours }} : {{ formattedMinutes }} : <span class="desktop-price__timer-number--blue">{{ formattedSeconds }}</span></p>
+            <p class="desktop-price__timer-number">{{ time }} : {{ time }} : <span class="desktop-price__timer-number--blue">{{ time }}</span></p>
             <div class="desktop-price__timer-text-container">
               <p class="desktop-price__timer-text">год</p>
               <p class="desktop-price__timer-text">хв</p>
