@@ -46,7 +46,7 @@ onMounted(() => {
       Оберіть свій тарифний пакет:
     </h2>
     <div class="price__timer">
-      <p class="price__timer-number">{{ formattedHours }} : {{ formattedMinutes }} :{{ formattedSeconds }}</p>
+      <p class="price__timer-number">{{ time }} : {{ time }} :{{ time }}</p>
       <div class="price__timer-text-container">
         <p class="price__timer-text">год</p>
         <p class="price__timer-text">хв</p>
@@ -1070,7 +1070,7 @@ onMounted(() => {
       font-style: normal;
       font-weight: 400;
       line-height: 150%;
-      width: 160px;
+      width: max-content;
 
       &--blue {
         color: $blueSecondaryColor;
